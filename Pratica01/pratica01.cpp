@@ -1,33 +1,6 @@
 #include <iostream>
+#include "Veiculo.h"
 using namespace std;
-
-class Veiculo{
-	
-	private:
-		string nome;
-		int num_rodas;
-		
-	public:
-		Veiculo(const char *p){
-			this->nome = p;
-			cout << "O objeto " << nome << " foi criado" << endl;
-		}
-		
-		~Veiculo(){
-			cout << "O objeto " << nome << " foi destruído" << endl;	
-		}
-
-		void setNumRodas(int x);
-		int getNumRodas();
-};
-
-void Veiculo::setNumRodas  (int x){
-	this->num_rodas = x;
-}
-
-int Veiculo::getNumRodas(){
-	return num_rodas;
-}
 
 int main()
 {
@@ -35,6 +8,7 @@ int main()
  cout << "Primeira aplicação C++" <<endl;
  
 // Veiculo veiculo1("v1");
+// veiculo1->setNumRodas(2);
 //{
 //	Veiculo veiculo2("v2");
 //	{
@@ -59,9 +33,9 @@ int main()
 	obj8->setNumRodas(4);
 	obj9->setNumRodas(6);
 	
-	cout << "v7: " << obj7->getNumRodas() << "rodas" << endl;
-	cout << "v8: " << obj8->getNumRodas() << "rodas" << endl;
-	cout << "v9: " << obj9->getNumRodas() << "rodas" << endl;
+	cout << "v7: " << obj7->getNumRodas() << " rodas" << endl;
+	cout << "v8: " << obj8->getNumRodas() << " rodas" << endl;
+	cout << "v9: " << obj9->getNumRodas() << " rodas" << endl;
 
   return 0;
 }
