@@ -5,6 +5,7 @@ class Veiculo{
 	
 	private:
 		string nome;
+		int num_rodas;
 		
 	public:
 		Veiculo(const char *p){
@@ -15,8 +16,18 @@ class Veiculo{
 		~Veiculo(){
 			cout << "O objeto " << nome << " foi destruído" << endl;	
 		}
-		
+
+		void setNumRodas(int x);
+		int getNumRodas();
 };
+
+void Veiculo::setNumRodas  (int x){
+	this->num_rodas = x;
+}
+
+int Veiculo::getNumRodas(){
+	return num_rodas;
+}
 
 int main()
 {
