@@ -36,7 +36,7 @@ int main()
 	cout << "v7: " << obj7->getNumRodas() << " rodas" << endl;
 	cout << "v8: " << obj8->getNumRodas() << " rodas" << endl;
 	cout << "v9: " << obj9->getNumRodas() << " rodas" << endl;
-
+	
   return 0;
 }
 
