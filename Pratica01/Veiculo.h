@@ -1,30 +1,34 @@
 #include <iostream>
 using namespace std;
+
 class Roda{
-	
-	public:
-	Roda();
-	~Roda();
-	
-};
-class Veiculo{
-	private:
-		string nome;
-		int num_rodas;
-		Roda *rodas;
-	public:
-		Veiculo(const char *p){
-			this->nome = p;
-			this->rodas = NULL;
-			cout << "O objeto " << nome << " foi criado" << endl;
-		}
-		
-		~Veiculo(){
-			cout << "O objeto " << nome << " foi destruído" << endl;	
-		}
 
 	public:
+		Roda(){
+			cout <<"A roda foi construida" << endl;
+		}
+		~Roda(){
+			cout <<"A roda doi destruida" <<endl;
+		}
+};
+class Veiculo{
+
+	string nome;
+	int num_rodas;
+	Roda *rodas;
+
+	public:
+		Veiculo(const char *name){
+			this->nome = name;
+			cout <<"O veiculo " << nome <<" foi construido" << endl;
+			this->rodas = NULL;
+		}
+
+		~Veiculo(){
+			cout <<"O veiculo " << nome <<" foi detruido" << endl;
+			delete [] this->rodas;
+		}
+
 		void setNumRodas(int x);
 		int getNumRodas();
 };
-
