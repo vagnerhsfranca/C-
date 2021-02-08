@@ -4,16 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../pratica02.cpp \
-../veiculo.cpp 
+../pratica02.cpp 
 
 OBJS += \
-./pratica02.o \
-./veiculo.o 
+./pratica02.o 
 
 CPP_DEPS += \
-./pratica02.d \
-./veiculo.d 
+./pratica02.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1612400154 source:c:\users\admin\desktop\vagner\c++\pratica03\pratica03\pratica03.cpp
+	<iostream>
+	"funcoes.h"
+
+1612400453 c:\users\admin\desktop\vagner\c++\pratica03\pratica03\funcoes.h
+	<iostream>
+
+1612578979 source:c:\users\admin\desktop\vagner\c++\pratica03\pratica03.cpp
+	<iostream>
+	"funcoes.h"
+	"arranjo.h"
+
+1612408186 c:\users\admin\desktop\vagner\c++\pratica03\funcoes.h
+	<iostream>
+	<cstring>
+
+1612577120 c:\users\admin\desktop\vagner\c++\pratica03\arranjo.h
+	<stdexcept>
+
+1612495322 c:\users\admin\desktop\vagner\c++\pratica03\excecao.h
+
+1612495322 source:c:\users\admin\desktop\vagner\c++\pratica03\excecao.h
+

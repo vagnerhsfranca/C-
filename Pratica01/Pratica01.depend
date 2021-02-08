@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1611947689 source:c:\users\admin\desktop\vagner\c++\pratica01\pratica01.cpp
+	<iostream>
+	"veiculo.h"
+
+1611947689 c:\users\admin\desktop\vagner\c++\pratica01\veiculo.h
+	<iostream>
+
+1611947688 source:c:\users\admin\desktop\vagner\c++\pratica01\veiculo.cpp
+	"veiculo.h"
+

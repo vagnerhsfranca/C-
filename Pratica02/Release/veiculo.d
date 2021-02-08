@@ -1,1 +1,0 @@
-veiculo.o: ../veiculo.cpp
