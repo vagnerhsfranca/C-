@@ -55,6 +55,13 @@ turma.set(0, Aluno("Joao","1234"));
 turma.set(1, Aluno("Maria","5235"));
 turma.set(2, Aluno("Jose","2412"));
 turma.exibir();
+cout << endl;
 
+Aluno aluno1("vagner", "123");
+Aluno aluno2=(Aluno("teste", "4321"));
+
+cout << aluno1 << endl;
+cout << aluno2 << endl;
+cout << endl;
 return 0;
 }

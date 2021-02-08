@@ -12,8 +12,8 @@ private:
 public:
     Arranjo(int tam) {
     // instanciar o array de items com new (pratica 1) e setar tamanho;
-        tamanho=tam;
-        items = new T[tam];
+        this->tamanho=tam;
+        this->items = new T[tam];
     }
 virtual ~Arranjo() {
 // destruir o array de items (prática 1);
@@ -28,12 +28,11 @@ virtual void set(int idx, const T & item) {
     if(idx < 0 || idx > tamanho-1){
         throw "Erro";
     }else{
-        items[idx] = item;
+    this->items[idx] = item;
     }
 }
 virtual void exibir();
 };
-
 template<class T>
 void Arranjo<T>::exibir() {
 // exibir cada item numa linha da forma "<idx>: <item>"
