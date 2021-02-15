@@ -39,7 +39,7 @@ cout << endl;
 aereo = new Aereo("VA1");
 aereo->mover();
 //casting Aereo
-//((Aereo*)aereo)->setVelMax(1040.5);
+((Aereo*)aereo)->setVelMax(1040.5);
 
 
 cout << endl;
@@ -53,6 +53,9 @@ cout << endl;
 Veiculo * anfi;
 anfi = new Anfibio("anfibio");
 anfi->mover();
+
+cout << endl;
+delete anfi;
 
     return 0;
 }

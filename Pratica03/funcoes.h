@@ -8,7 +8,7 @@ namespace funcoes{
 
 template <class T>
 void trocar(T &a, T &b){
-int temp = a;
+T temp = a;
     a = b;
     b = temp;
 }
@@ -22,7 +22,13 @@ T minimo(const T a, const T b){
 }
 template <>
 char * minimo<char *>(char *param1, char *param2){
-    strcmp(param1, param2);
+
+    return (strcmp(param1, param2) < 0) ? param1:param2;
+}
+template <>
+char * maximo<char *>(char *param1, char *param2){
+
+    return (strcmp(param1, param2) < 0) ? param2:param1;
 }
 //void trocar(int &a, const int b){
 //int temp = a;

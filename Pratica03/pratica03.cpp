@@ -18,7 +18,8 @@ cout << "Depois : x = " << x << " y = " << y << endl;
 cout << "Minimo entre " << x << " e " << y << ": " << minimo(x, y) << endl;
 cout << "Maximo entre " << y << " e " << z << ": " << maximo(y, z) << endl;
 cout << endl;
-cout << minimo("nome","teste") << endl;
+cout << maximo("maximo","Maximo") << endl;
+cout << minimo("minimo","Minimo") << endl;
 cout << endl;
 
 Arranjo<int> arr(10);
@@ -40,7 +41,7 @@ cout << endl;
 Arranjo<float> arr3(2);
 try{
 arr3.set(3, 4.9);
-}catch(const char *f){
+}catch(const char *){
     cout << "Erro set()" << endl;
 }
 try{
@@ -57,11 +58,10 @@ turma.set(2, Aluno("Jose","2412"));
 turma.exibir();
 cout << endl;
 
-Aluno aluno1("vagner", "123");
-Aluno aluno2=(Aluno("teste", "4321"));
+
+Aluno aluno1=(Aluno("testeSobrecarga", "4321"));
 
 cout << aluno1 << endl;
-cout << aluno2 << endl;
 cout << endl;
 return 0;
 }

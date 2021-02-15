@@ -8,7 +8,7 @@ class Roda{
 			cout <<"A roda foi construida" << endl;
 		}
 		~Roda(){
-			cout <<"A roda doi destruida" <<endl;
+			cout <<"A roda foi destruida" <<endl;
 		}
 };
 class Veiculo{

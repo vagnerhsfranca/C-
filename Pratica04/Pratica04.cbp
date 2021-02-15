@@ -2,35 +2,39 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Pratica01" />
+		<Option title="Pratica04" />
 		<Option pch_mode="2" />
-		<Option compiler="cygwin" />
+		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/Pratica01_2" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/Pratica04" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
-				<Option compiler="cygwin" />
+				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Pratica01_2" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/Pratica04" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
-				<Option compiler="cygwin" />
+				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="pratica01.cpp" />
-		<Unit filename="veiculo.cpp" />
-		<Unit filename="veiculo.h" />
+		<Unit filename="pilha.cpp" />
+		<Unit filename="pilha.h" />
+		<Unit filename="pilha2_stack.cpp" />
+		<Unit filename="polonesa.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1613075735 source:c:\users\admin\desktop\vagner\c++\pratica04\pilha.cpp
+	<iostream>
+	"pilha.h"
+
+1613078772 c:\users\admin\desktop\vagner\c++\pratica04\pilha.h
+
+1613075762 source:c:\users\admin\desktop\vagner\c++\pratica04\polonesa.cpp
+	<iostream>
+	"pilha.h"
+
+1613078204 source:c:\users\admin\desktop\vagner\c++\pratica04\pilha2_stack.cpp
+	<iostream>
+	<stack>
+

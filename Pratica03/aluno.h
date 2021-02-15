@@ -22,14 +22,14 @@ Aluno & operator=(const Aluno & aluno) {
 template<>
 void Arranjo<Aluno>::set(int idx, const Aluno & aluno) {
 // atribua nome e mat individualmente para o item do array
-    items[idx].nome = aluno.nome;
-    items[idx].mat = aluno.mat;
+    itens[idx].nome = aluno.nome;
+    itens[idx].mat = aluno.mat;
 }
 template<>
 void Arranjo<Aluno>::exibir() {
 // exiba cada aluno do array no formato "idx : mat = nome"
     for(int i=0; i < tamanho; i++){
-        cout << i << " : " << items[i].mat << " = " << items[i].nome << endl;
+        cout << i << " : " << itens[i].mat << " = " << itens[i].nome << endl;
     }
 }
 ostream & operator<<(ostream & out, const Aluno & aluno) {

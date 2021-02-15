@@ -6,24 +6,24 @@
 1612400453 c:\users\admin\desktop\vagner\c++\pratica03\pratica03\funcoes.h
 	<iostream>
 
-1612825998 source:c:\users\admin\desktop\vagner\c++\pratica03\pratica03.cpp
+1613344063 source:c:\users\admin\desktop\vagner\c++\pratica03\pratica03.cpp
 	<iostream>
 	"funcoes.h"
 	"arranjo.h"
 	"aluno.h"
 
-1612819988 c:\users\admin\desktop\vagner\c++\pratica03\funcoes.h
+1612976206 c:\users\admin\desktop\vagner\c++\pratica03\funcoes.h
 	<iostream>
 	<cstring>
 
-1612825376 c:\users\admin\desktop\vagner\c++\pratica03\arranjo.h
+1613343909 c:\users\admin\desktop\vagner\c++\pratica03\arranjo.h
 	<iostream>
 
 1612495322 c:\users\admin\desktop\vagner\c++\pratica03\excecao.h
 
 1612495322 source:c:\users\admin\desktop\vagner\c++\pratica03\excecao.h
 
-1612827053 c:\users\admin\desktop\vagner\c++\pratica03\aluno.h
+1612975488 c:\users\admin\desktop\vagner\c++\pratica03\aluno.h
 	<iostream>
 	<ostream>
 
