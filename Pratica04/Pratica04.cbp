@@ -31,10 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="pilha.cpp" />
-		<Unit filename="pilha.h" />
-		<Unit filename="pilha2_stack.cpp" />
-		<Unit filename="polonesa.cpp" />
+		<Unit filename="fila.cpp" />
+		<Unit filename="fila.h" />
+		<Unit filename="impressora.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
