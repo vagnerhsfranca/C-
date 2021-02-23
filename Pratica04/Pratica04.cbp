@@ -33,6 +33,7 @@
 		</Compiler>
 		<Unit filename="fila.cpp" />
 		<Unit filename="fila.h" />
+		<Unit filename="fila2_queue.cpp" />
 		<Unit filename="impressora.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

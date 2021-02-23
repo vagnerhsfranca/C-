@@ -13,13 +13,13 @@
 	<iostream>
 	<stack>
 
-1614029418 source:c:\users\admin\desktop\vagner\c++\pratica04\fila.cpp
+1614105107 source:c:\users\admin\desktop\vagner\c++\pratica04\fila.cpp
 	<iostream>
 	"fila.h"
 
 1614029988 c:\users\admin\desktop\vagner\c++\pratica04\fila.h
 
-1614029418 source:c:\users\admin\desktop\vagner\c++\pratica04\impressora.cpp
+1614048754 source:c:\users\admin\desktop\vagner\c++\pratica04\impressora.cpp
 	<stdlib.h>
 	<iostream>
 	<thread>
