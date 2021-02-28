@@ -1,4 +1,4 @@
-vou tevou te template <class T>
+template <class T>
 class Pilha {
 private:
 // Atributos para array de items, capacidade e topo da pilha

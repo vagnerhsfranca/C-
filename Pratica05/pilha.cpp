@@ -13,7 +13,7 @@
 
 using namespace std;
 
-int main() {
+int mainP() {
 	Pilha<int> pilha(MAX);
 
 	try {

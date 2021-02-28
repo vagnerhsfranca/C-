@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
-1613075735 source:c:\users\admin\desktop\vagner\c++\pratica04\pilha.cpp
+1614279001 source:c:\users\admin\desktop\vagner\c++\pratica04\pilha.cpp
 	<iostream>
-	"pilha.h"
+	"pilha2.h"
 
 1613078772 c:\users\admin\desktop\vagner\c++\pratica04\pilha.h
 
@@ -9,7 +9,7 @@
 	<iostream>
 	"pilha.h"
 
-1613078204 source:c:\users\admin\desktop\vagner\c++\pratica04\pilha2_stack.cpp
+1613078864 source:c:\users\admin\desktop\vagner\c++\pratica04\pilha2_stack.cpp
 	<iostream>
 	<stack>
 
@@ -25,4 +25,13 @@
 	<thread>
 	<chrono>
 	"fila.h"
+
+1614114442 source:c:\users\admin\desktop\vagner\c++\pratica04\lista.cpp
+	<iostream>
+	"lista.h"
+
+1614210505 c:\users\admin\desktop\vagner\c++\pratica04\lista.h
+
+1614279926 c:\users\admin\desktop\vagner\c++\pratica04\pilha2.h
+	<stack>
 

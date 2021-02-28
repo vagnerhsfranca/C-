@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1614295544 source:c:\users\admin\desktop\vagner\c++\pratica05\polonesa.cpp
+	<iostream>
+	"pilha2.h"
+
+1614295877 c:\users\admin\desktop\vagner\c++\pratica05\pilha2.h
+	<iostream>
+
+1614295562 source:c:\users\admin\desktop\vagner\c++\pratica05\pilha.cpp
+	<iostream>
+	"pilha2.h"
+
+1614356685 source:c:\users\admin\desktop\vagner\c++\pratica05\fila.cpp
+	<iostream>
+	"fila2.h"
+
+1614355406 c:\users\admin\desktop\vagner\c++\pratica05\fila2.h
+	<iostream>
+
+1614356915 source:c:\users\admin\desktop\vagner\c++\pratica05\impressora.cpp
+	<stdlib.h>
+	<iostream>
+	<thread>
+	<chrono>
+	"fila2.h"
+
