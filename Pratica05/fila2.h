@@ -6,8 +6,8 @@ template <class T>
 class Fila {
 
 public:
-    typedef struct No{
-    T dado;
+    typedef struct{
+        T dado;
     No *prox;
     }No;
 

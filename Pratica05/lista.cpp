@@ -5,7 +5,7 @@
  *      Author: ramide
  */
 #include <iostream>
-#include "lista.h"
+#include "lista2.h"
 
 #define MAX 100
 

@@ -12,6 +12,8 @@
 				<Option type="1" />
 				<Option compiler="cygwin" />
 				<Compiler>
+					<Add option="-std=gnu++11" />
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 				</Compiler>
 			</Target>
@@ -29,6 +31,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="lista.cpp" />
+		<Unit filename="lista.h" />
 		<Unit filename="lista2.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
