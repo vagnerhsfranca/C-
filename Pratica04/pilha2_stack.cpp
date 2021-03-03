@@ -6,7 +6,7 @@ using namespace std;
 
 #define MAX 100
 
-int mainP(){
+int mainP2(){
 
     std::stack<int> pilha;
 

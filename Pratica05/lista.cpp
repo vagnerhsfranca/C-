@@ -20,7 +20,7 @@ void testaTamanho(Lista<int> & lista, const char * subcaso, int tamanho) {
 	cerr << "OK" << endl;
 }
 
-int main() {
+int mainL() {
 	Lista<int> lista(MAX);
 
 	try {

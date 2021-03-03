@@ -48,7 +48,7 @@ int polonesa(const char * exp) {
 }
 
 
-int main2() {
+int mainP3() {
 	cout << polonesa("23+31-*") << endl;
 	cout << polonesa("93*42/-") << endl;
 

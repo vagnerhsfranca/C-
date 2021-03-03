@@ -6,8 +6,7 @@
  */
 
 #include <iostream>
-//#include "pilha.h"
-#include "pilha2.h"
+#include "pilha.h"
 
 #define MAX 100
 

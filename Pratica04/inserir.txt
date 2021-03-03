@@ -1,5 +1,0 @@
-for(int i = fim; i >= idx; i--){
-                    lista[i + 1] = lista[i];
-                }
-                fim++;
-                lista[idx] = item;

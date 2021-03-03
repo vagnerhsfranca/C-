@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int mainF2() {
+int mainF3() {
 	std::queue<int> fila;
 
 	try {

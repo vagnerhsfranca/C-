@@ -1,17 +1,13 @@
-#include <iostream>
-
-using namespace std;
-
 template <class T>
 class Fila {
 
 public:
-    typedef struct{
+    typedef struct No{
         T dado;
-    No *prox;
+        No *prox;
     }No;
 
-    typedef struct{
+    typedef struct fila{
         No *inicio;
         No *fim;
     }fila;
@@ -25,8 +21,13 @@ Fila(int cap) {
 // inicializar array de items, capacidade, tamanho, posição inicial
     capacidade = cap;
     n_elementos = 0;
-    ordem->fim = NULL;
-    ordem->inicio = NULL;
+    ordem=(fila*)malloc(sizeof(fila));
+        if(ordem == NULL)
+            throw "list overflow";
+        else{
+            ordem->fim = NULL;
+            ordem->inicio = NULL;
+        }
 }
 ~Fila() {}
 
@@ -35,50 +36,50 @@ void enfileira(const T & item) {
     if(n_elementos < capacidade){
         No *novo_no=(No*)malloc(sizeof(No));
 
-        if(novo_no == NULL){
+        if(novo_no == NULL)
             throw "list overflow";
-        }else{
+        else{
             novo_no->dado = item;
             novo_no->prox = NULL;
-            ++n_elementos;
 
-            if(ordem->inicio == NULL){
+            if(ordem->inicio == NULL)
                 ordem->inicio = novo_no;
-            }else{
+            else
                 ordem->fim->prox = novo_no;
-            }
 
             ordem->fim =novo_no;
-        }
 
-    }else{
+        }
+     ++n_elementos;
+    }else
         throw "Fila cheia";
-    }
 }
 T desenfileira() {
 // remove um item do inicio da fila; lança “Fila vazia” caso vazia
     if(n_elementos > 0){
 
-        T valor;
-        No *temp = ordem->inicio;
+        No *temp=(No*)malloc(sizeof(No));
 
-        if(temp != NULL){
-            ordem->inicio = temp->prox;
-            temp->prox = NULL;
-            valor = temp->dado;
-            free(temp);
-                if(ordem->inicio == NULL){
-                    ordem->fim = NULL;
-                }
-            --n_elementos;
-            return valor;
-        }else {
-           throw "Fila vazia";
-        }
-    }else{
+        if(ordem->inicio == NULL)
+            throw "lista vazia";
+        if(temp == NULL)
+            throw "fila overflow";
+
+        temp = ordem->inicio;
+        ordem->inicio = ordem->inicio->prox;
+
+        if(ordem->inicio == NULL)
+            ordem->fim = NULL;
+
+
+        T dados = temp->dado;
+        temp->prox = NULL;
+        free(temp);
+        --n_elementos;
+        return dados;
+
+    }else
         throw "Fila vazia";
-    }
-
 }
 int cheia() {
 // retorna 1 se cheia, 0 caso contrário
