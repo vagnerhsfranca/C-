@@ -7,7 +7,7 @@ private:
     T * itens;
     int capacidade;
     int inicio;
-    int n_elementos;
+    int n_elementos; //indica tambem o fim da fila
 
 public:
 
@@ -28,11 +28,7 @@ public:
     // adiciona um item ao final da fila; lança “Fila cheia” caso cheia
         if(n_elementos < capacidade){
 
-            if(inicio+n_elementos < capacidade){
-                itens[inicio + n_elementos] = item;
-            }else{
-                itens[(inicio + n_elementos) - capacidade] = item;
-            }
+            itens[n_elementos] = item;
             ++n_elementos;
 
         }else{
@@ -44,9 +40,10 @@ public:
     // remove um item do inicio da fila; lança “Fila vazia” caso vazia
         if(n_elementos > 0){
 
+            int inicioTemp = inicio;
+            inicio = ++inicio % capacidade;
             --n_elementos;
-
-            return itens[inicio++];
+            return itens[inicioTemp];
 
         }else{
             throw "Fila vazia";

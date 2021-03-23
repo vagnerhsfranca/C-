@@ -3,66 +3,85 @@
 using namespace std;
 
 template <class T>
-class Pilha {
+class Pilha
+{
 
-public:
+private:
+
     typedef struct No{
         T dado;
         No *prox;
-    }itemPilha;
+    };
 
     int capacidade;
     int n_elementos;
-    itemPilha *topo;
+    No *topo;
 
-Pilha(int cap) {
-// instancia array de items, inicializa capacidade e topo
-    capacidade = cap;
-    n_elementos = 0;
-    topo = NULL;
-}
-~Pilha() {
-// destroy array de items
-}
-void empilha(T item) {
-// empilha um item no topo da pilha; lança “Estouro da pilha” se cheia
-    if(n_elementos < capacidade){
-        itemPilha *novo_no;
+public:
 
-        if((novo_no=(itemPilha*)malloc(sizeof(itemPilha))) == NULL){
-            throw "stack  overflow";
-        }else{
-            novo_no->dado = item;
-            novo_no->prox = topo;
-            topo = novo_no;
-            ++n_elementos;
+    Pilha(int cap)
+    {
+        // instancia array de items, inicializa capacidade e topo
+        capacidade = cap;
+        n_elementos = 0;
+        topo = NULL;
+    }
+
+    ~Pilha()
+    {
+        // destroy array de items
+        // implementar o desempilha até ficar fazia
+        while(n_elementos > 0){
+            desempilha();
+            --n_elementos;
         }
 
-    }else{
-        throw "Pilha cheia";
     }
-}
-T desempilha() {
+
+    void empilha(T item)
+    {
+// empilha um item no topo da pilha; lança “Estouro da pilha” se cheia
+        if(n_elementos < capacidade)
+        {
+            No *novo_no;
+
+            if((novo_no = new No) == NULL){//caso o programa não consiga alocar memória para o objeto
+                throw "stack overflow";
+            }else{
+                novo_no->dado = item;
+                novo_no->prox = topo;
+                topo = novo_no;
+                ++n_elementos;
+            }
+
+        }else{
+            throw "Pilha cheia";
+        }
+    }
+
+    T desempilha()
+    {
 // remove um item do topo da pilha; lança “Pilha vazia” se vazia
-    if(n_elementos > 0){
+        if(n_elementos > 0){
 
-        itemPilha * temp;
+            No *temp;
 
-        T valor = topo->dado;
-        temp = topo;
-        topo = topo->prox;
+            T valor = topo->dado;
+            temp = topo;
+            topo = topo->prox;
 
-        temp->prox = NULL;
-        free(temp);
-        --n_elementos;
-        return (valor);
+            --n_elementos;
+            delete temp;
+            return (valor);
 
-    }else{
-        throw "Pilha vazia";
+        }else{
+            throw "Pilha vazia";
+        }
     }
-}
-int tamanho() {
- // retorna o número de elementos na pilha.
- return n_elementos;
-}
+
+    int tamanho()
+    {
+// retorna o número de elementos na pilha.
+        return n_elementos;
+    }
 };

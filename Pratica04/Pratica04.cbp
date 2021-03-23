@@ -31,9 +31,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="fila.cpp" />
 		<Unit filename="fila.h" />
 		<Unit filename="lista.cpp" />
 		<Unit filename="lista.h" />
+		<Unit filename="pilha.cpp" />
 		<Unit filename="pilha.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

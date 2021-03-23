@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1616293378 source:c:\users\admin\desktop\vagner\c++\pratica09\domino.cpp
+	<iostream>
+	<locale.h>
+	"graph.h"
+
+1527169607 c:\users\admin\desktop\vagner\c++\pratica09\graph.h
+
+1616296060 source:c:\users\admin\desktop\vagner\c++\pratica09\graph.cpp
+	<iostream>
+	"graph.h"
+

@@ -1,96 +1,97 @@
 template <class T>
-class Fila {
+class Fila
+{
 
-public:
+private:
+
     typedef struct No{
-        T dado;
-        No *prox;
-    }No;
-
-    typedef struct fila{
         No *inicio;
         No *fim;
-    }fila;
+        T dado;
+        No *prox;
+    };
 
-    fila *ordem;
+    No* fila;
     int capacidade;
     int n_elementos;
 
+public:
 
-Fila(int cap) {
-// inicializar array de items, capacidade, tamanho, posição inicial
-    capacidade = cap;
-    n_elementos = 0;
-    ordem=(fila*)malloc(sizeof(fila));
-        if(ordem == NULL)
-            throw "list overflow";
-        else{
-            ordem->fim = NULL;
-            ordem->inicio = NULL;
+    Fila(int cap){
+    // inicializar array de items, capacidade, tamanho, posição inicial
+        capacidade = cap;
+        n_elementos = 0;
+
+        fila->fim = NULL;
+        fila->inicio = NULL;
+    }
+
+    ~Fila() {
+
+        while(n_elementos > 0){
+            desenfileira();
+            --n_elementos;
         }
-}
-~Fila() {}
+    }
 
-void enfileira(const T & item) {
-// adiciona um item ao final da fila; lança “Fila cheia” caso cheia
-    if(n_elementos < capacidade){
-        No *novo_no=(No*)malloc(sizeof(No));
+    void enfileira(const T & item)
+    {
+    // adiciona um item ao final da fila; lança “Fila cheia” caso cheia
+        if(n_elementos < capacidade)
+        {
+            No *novo_no;
 
-        if(novo_no == NULL)
-            throw "list overflow";
-        else{
-            novo_no->dado = item;
-            novo_no->prox = NULL;
+            if((novo_no = new No) == NULL){//caso o programa não consiga alocar memória para o objeto
+                throw "list overflow";
 
-            if(ordem->inicio == NULL)
-                ordem->inicio = novo_no;
-            else
-                ordem->fim->prox = novo_no;
+            }else{
+                novo_no->dado = item;
+                novo_no->prox = NULL;
 
-            ordem->fim =novo_no;
+                if(fila->inicio == NULL)
+                    fila->inicio = novo_no;
+                else
+                    fila->fim->prox = novo_no;
 
-        }
-     ++n_elementos;
-    }else
-        throw "Fila cheia";
-}
-T desenfileira() {
-// remove um item do inicio da fila; lança “Fila vazia” caso vazia
-    if(n_elementos > 0){
+                fila->fim =novo_no;
+            }
+            ++n_elementos;
 
-        No *temp=(No*)malloc(sizeof(No));
+        }else
+            throw "Fila cheia";
+    }
 
-        if(ordem->inicio == NULL)
-            throw "lista vazia";
-        if(temp == NULL)
-            throw "fila overflow";
+    T desenfileira()
+    {
+    // remove um item do inicio da fila; lança “Fila vazia” caso vazia
+        if(n_elementos > 0){
 
-        temp = ordem->inicio;
-        ordem->inicio = ordem->inicio->prox;
+            No *temp;
 
-        if(ordem->inicio == NULL)
-            ordem->fim = NULL;
+            temp = fila->inicio;
+            fila->inicio = fila->inicio->prox;
 
+            T dados = temp->dado;
+            --n_elementos;
+            delete temp;
+            return dados;
 
-        T dados = temp->dado;
-        temp->prox = NULL;
-        free(temp);
-        --n_elementos;
-        return dados;
+        }else
+            throw "Fila vazia";
+    }
 
-    }else
-        throw "Fila vazia";
-}
-int cheia() {
-// retorna 1 se cheia, 0 caso contrário
-    return (n_elementos == capacidade) ? 1:0;
-}
-int vazia() {
-// retorna 1 se vazia, 0 caso contrário
-   return (n_elementos == 0) ? 1:0;
-}
-int tamanho() {
-// retorna a quantidade de itens atualmente na fila
-    return n_elementos;
-}
+    int cheia(){
+    // retorna 1 se cheia, 0 caso contrário
+        return (n_elementos == capacidade);
+    }
+
+    int vazia(){
+    // retorna 1 se vazia, 0 caso contrário
+        return (n_elementos == 0);
+    }
+
+    int tamanho(){
+    // retorna a quantidade de itens atualmente na fila
+        return n_elementos;
+    }
 };

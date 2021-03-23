@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1511543677 source:c:\users\admin\desktop\vagner\c++\pratica10\main.cpp
+	<iostream>
+	"list.h"
+	"graph.h"
+
+1511535582 c:\users\admin\desktop\vagner\c++\pratica10\list.h
+	<iostream>
+
+1511545991 c:\users\admin\desktop\vagner\c++\pratica10\graph.h
+	<iostream>
+	"list.h"
+
+1616303066 source:c:\users\admin\desktop\vagner\c++\pratica10\graph.cpp
+	"graph.h"
+	"queue.h"
+	"heap.h"
+
+1511539063 c:\users\admin\desktop\vagner\c++\pratica10\queue.h
+	<stdlib.h>
+
+1511544188 c:\users\admin\desktop\vagner\c++\pratica10\heap.h
+

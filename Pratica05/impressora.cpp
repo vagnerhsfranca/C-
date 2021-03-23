@@ -16,7 +16,7 @@
 
 using namespace std;
 
-int mainF() {
+int mainI() {
 	Fila<int> impressora(10);
 	int i = 0;
 	while (1) {

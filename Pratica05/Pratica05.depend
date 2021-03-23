@@ -1,32 +1,32 @@
 # depslib dependency file v1.0
-1614647007 source:c:\users\admin\desktop\vagner\c++\pratica05\polonesa.cpp
+1614649031 source:c:\users\admin\desktop\vagner\c++\pratica05\polonesa.cpp
 	<iostream>
 	"pilha2.h"
 
-1614308918 c:\users\admin\desktop\vagner\c++\pratica05\pilha2.h
+1615338111 c:\users\admin\desktop\vagner\c++\pratica05\pilha2.h
 	<iostream>
 
-1614646799 source:c:\users\admin\desktop\vagner\c++\pratica05\pilha.cpp
+1615336612 source:c:\users\admin\desktop\vagner\c++\pratica05\pilha.cpp
 	<iostream>
 	"pilha2.h"
 
-1614356685 source:c:\users\admin\desktop\vagner\c++\pratica05\fila.cpp
+1616294816 source:c:\users\admin\desktop\vagner\c++\pratica05\fila.cpp
 	<iostream>
 	"fila2.h"
 
-1614648516 c:\users\admin\desktop\vagner\c++\pratica05\fila2.h
+1615338111 c:\users\admin\desktop\vagner\c++\pratica05\fila2.h
 
-1614648824 source:c:\users\admin\desktop\vagner\c++\pratica05\impressora.cpp
+1614649018 source:c:\users\admin\desktop\vagner\c++\pratica05\impressora.cpp
 	<stdlib.h>
 	<iostream>
 	<thread>
 	<chrono>
 	"fila2.h"
 
-1614646945 source:c:\users\admin\desktop\vagner\c++\pratica05\lista.cpp
+1616294863 source:c:\users\admin\desktop\vagner\c++\pratica05\lista.cpp
 	<iostream>
 	"lista2.h"
 
-1614629759 c:\users\admin\desktop\vagner\c++\pratica05\lista2.h
+1615342052 c:\users\admin\desktop\vagner\c++\pratica05\lista2.h
 	<iostream>
 

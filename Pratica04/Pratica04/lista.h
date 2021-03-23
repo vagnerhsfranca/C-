@@ -27,7 +27,7 @@ public:
     void adiciona (const T & item) {
     // adiciona um item ao final da lista; lança “Lista cheia” caso cheia
         if(n_elementos < capacidade){
-            itens[n_elementos] = item;
+            itens[n_elementos % capacidade] = item;
             ++n_elementos;
         }else{
             throw "Lista cheia";
