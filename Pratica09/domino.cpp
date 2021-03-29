@@ -20,7 +20,7 @@ int main() {
 	graph.edge(2,1);
 	graph.edge(6,4);
 	graph.edge(4,2);
-//	graph.edge(0,5);
+	graph.edge(0,5);
 
 	if (!(graph.connected())) {
 		cout << "NÃO (Não conexo)" << endl;

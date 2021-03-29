@@ -28,6 +28,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="graph.cpp" />
+		<Unit filename="graph.h" />
+		<Unit filename="heap.h" />
+		<Unit filename="list.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="queue.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

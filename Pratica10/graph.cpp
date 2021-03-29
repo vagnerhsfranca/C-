@@ -61,7 +61,20 @@ List<int> * Graph::bfs(int src) {
 
 // Busca em largura
 void Graph::BFS(int src, int * visited, List<int> * result) {
-	// TO DO
+    for(int i = 0; i < nVert; i++){
+        visited[i] = NULL;
+    }
+    Queue <int> *fila();
+    visited[src] = src;
+
+    while(fila.empty() != 1){
+        x= fila.dequeue();
+        for(int i = src; i < nVert; i++){
+            if(visited[src+1] = NULL){
+                fila.enqueue(++src);
+            }
+        }
+    }
 }
 
 List<int> * Graph::spf(int src, int dst) {
