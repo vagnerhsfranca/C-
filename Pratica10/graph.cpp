@@ -64,16 +64,20 @@ void Graph::BFS(int src, int * visited, List<int> * result) {
     for(int i = 0; i < nVert; i++){
         visited[i] = NULL;
     }
-    Queue <int> *fila();
+    Queue <int> fila();
+    fila->enqueue(src);
     visited[src] = src;
-
-    while(fila.empty() != 1){
-        x= fila.dequeue();
+    int x;
+    while(!fila.empty()){
+        x = fila->dequeue();
         for(int i = src; i < nVert; i++){
-            if(visited[src+1] = NULL){
-                fila.enqueue(++src);
+            if(visited[x] != x){
+                fila->enqueue(++src);
+                visited[x] = x;
+                result++;
             }
         }
+
     }
 }
 

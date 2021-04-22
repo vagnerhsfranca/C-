@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1616184039 source:c:\users\admin\desktop\vagner\c++\pratica07\ordenacao.cpp
+	<iostream>
+	<stdlib.h>
+	<chrono>
+
+1617145887 source:c:\users\admin\desktop\vagner\c++\pratica07-ok\ordenacao.cpp
+	<iostream>
+	<stdlib.h>
+	<chrono>
+

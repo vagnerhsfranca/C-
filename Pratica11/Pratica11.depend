@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1513361878 source:c:\users\admin\desktop\vagner\c++\pratica11\util.cpp
+	<iostream>
+	"util.h"
+
+1513360523 c:\users\admin\desktop\vagner\c++\pratica11\util.h
+
+1617742488 source:c:\users\admin\desktop\vagner\c++\pratica11\subseqmax.cpp
+	<iostream>
+	<stdlib.h>
+	<chrono>
+	"util.h"
+
+1617745924 source:c:\users\admin\desktop\vagner\c++\pratica11\subsetsum.cpp
+	<iostream>
+	<stdlib.h>
+	<chrono>
+	"util.h"
+
