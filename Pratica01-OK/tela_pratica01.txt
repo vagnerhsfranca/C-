@@ -1,8 +1,0 @@
-Primeira aplicacao C++
-O veiculo v4 foi construido
-A roda foi construida
-A roda foi construida
-
-O veiculo v4 foi detruido
-A roda foi destruida
-A roda foi destruida
